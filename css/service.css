@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header part css */
+nav{
+    display: flex;
+    height: 60px;
+    background-color:black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    box-shadow: 0 1px 9px cyan;
+    
+}
+.logo{
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 4px;
+}
+.logo:hover{
+    transition: .2s ease-in-out;
+    box-shadow: 1px 1px 10px cyan;
+
+}
+ 
+#search{
+border-radius: 4px;
+ }
+  
+.search-icon{
+    margin-right: 10px;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+#click{
+    display: none;
+}
+nav ul li{
+    margin: 10px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a.active,a:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+    font-weight: 900;
+}
+nav .menu-btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.title{
+    background-color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+/* insta icon css */
+.fab.fa-instagram {
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%,
+     #cc2366 75%, #bc1888 100%);
+     font-size: 14px;
+     padding: 2.4px;
+     border-radius: 5px;
+     color: #FFF;
+     font-weight: lighter;
+     margin-right: 10px;
+    }
+.fab {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+    }
+.fa, .fab, .fad, .fal, .far, .fas {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+/* insta icon end  */
+
+/* css for table  */
+table{
+    position: relative;
+    border-collapse: collapse;
+    width: 98% ;
+    text-align: center;
+    left: 10px;
+    box-shadow: 1px 1px 9px black;
+
+}
+table thead{
+    height: 40px;
+    background-color: cyan;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+
+}
+table th {
+    font-size: 20px;
+    padding: 0px 15px;
+
+}
+
+
+.head1{
+    padding-left: 30px;
+    padding-right: 38px;
+}
+.insta-title{
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 2px;
+    box-shadow: 1px 1px 7px black;
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+
+}
+.instagram,.facebook,.youtube{
+    border-bottom: 1px  solid black;  
+}
+.facebook-title{
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 2px;
+    box-shadow: 1px 1px 7px black;
+    text-shadow: 1px 1px 9px black;
+    background: #f09433;
+  
+    background: linear-gradient(45deg, #052bf7 0%, #0f80e3 25%, #27a1dc 50%,
+    #234dcc 75%, #052bf7 100%); 
+
+}
+#fb-icon{
+    color: #234dcc;
+}
+#yt-icon{
+    color: red;
+}
+.youtube-title{
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 2px;
+    box-shadow: 1px 1px 7px black;
+    /* text-shadow: 1px 1px 9px black; */
+    background: #f09433;
+    background:linear-gradient(45deg, #f70e0e 0%, #f70000 25%,
+     #dc2727 50%, #f90000 75%, #f70505 100%) !important;
+}
+.instagram td,.facebook td,.youtube td{
+    padding: 12px 0;
+    font-size: 20px;
+}
+.id-list,.average-time-list{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(124, 113, 126);
+}
+.service-list{
+    font-weight: 600;
+    text-align: left;
+}
+
+.details-btn{
+    background-color: #e6683c;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+
+}
+
+.min-order-list{
+    color: green;
+}
+.max-order-list{
+    color: red;
+}
+
+
+
+
+
+@media(max-width:547px){
+    .logo{
+        text-align: left;
+    }
+    nav{
+        padding: 0;
+
+    }
+#click:checked~ .menu-btn i::before{
+    content: "\f00d";
+}
+
+    
+    nav ul{
+
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background: #111;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all .3s ease-in-out;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li a.active,a:hover{
+        border:none;
+        font-weight: 900;
+        background-color: none;
+        color: cyan;
+    }
+    nav .menu-btn{
+        display: block ;
+    }
+}
+@media(max-width:517px){
+    .login{
+        flex-direction: column;
+    }
+}
+@media (max-width:375px){
+    .about h2 {
+        display: none;
+    }
+    .about p {
+        display: none;
+    }
+    
+}
